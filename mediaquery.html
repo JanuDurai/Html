@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <style>
+  
+        @media(any-hover:hover)
+        {
+            p:hover{
+                background-color: pink;
+            }
+        }
+       @media(any-pointer:fine)
+       {
+        input[type="checkbox"]
+         {
+            appearance:none;
+            width:15px;
+            height:15px;
+            border:1px solid blue;
+         }
+         input[type="checkbox"]:hover
+         {
+          background-color:pink;
+         }
+       }
+    @media (color)   {
+   #selector{
+    color: grey;
+    }
+}
+@media(display-mode:fullscreen)
+{
+    body{
+        margin:0;
+        border:5px solid blue;
+    }
+}
+@media(dynamic-range:standard)
+{
+    .dynamicrange{
+        color:red;
+    }
+}
+ @media(force-color:active){
+    .button{
+    border:5px ButtonText solid;
+    }
+ }
+    </style>
+    <body>
+        <p>This is html webpage</p>
+        <input type="checkbox" name="checkbox">
+        <label>checkbox</label>
+        <p id="selector">
+            HTML (HyperText Markup Language) is the most basic building block of the Web. 
+            It defines the meaning and structure of web content. Other technologies besides
+            HTML are generally used to describe a web page's appearance/presentation (CSS) or 
+            functionality/behavior (JavaScript).
+        </p>
+        <div>
+            HTML (HyperText Markup Language) is the most basic building block of the Web. 
+            It defines the meaning and structure of web content. Other technologies besides
+            HTML are generally used to describe a web page's appearance/presentation (CSS) or 
+            functionality/behavior (JavaScript).
+        </div>
+        <p class="dynamicrange">The dynamic-range CSS media feature can be used to test the combination of brightness, contrast ratio, and color depth that are supported by the user agent and the output device.</p>
+    <input type="button" value="button" class="button">
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<style>
+    .wrapper {
+  display: flex;
+}
+
+@media (overflow-block: scroll) {
+  p {
+    color: red;
+  }
+}
+#sameasclassname:hover{
+    background:greenyellow;
+}
+#sameasidname:hover
+{
+    
+    background: blueviolet;
+}
+#firstdiv{
+    display:inline-flex;
+}
+#seconddiv
+{
+    display:flex;
+}
+a{
+    display:block;
+}
+</style>
+<html>
+    <body>
+        <div id="firstdiv"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac turpis
+  eleifend, fringilla velit ac, aliquam tellus. Vestibulum ante ipsum primis in
+  faucibus orci luctus et ultrices posuere cubilia Curae; </div>
+        <div>Nunc velit erat, tempus id rutrum sed, dapibus ut urna. Integer vehicula nibh a justo imperdiet
+  rutrum.</div>
+        <div> Nam faucibus pretium orci imperdiet sollicitudin. Nunc id facilisis
+  dui. Proin elementum et massa et feugiat. Integer rutrum ullamcorper eleifend.
+  Proin sit amet tincidunt risus. Sed nec augue congue eros accumsan tincidunt
+  sed eget ex.</div>
+  </div>
+
+  <div id="seconddiv"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac turpis
+  eleifend, fringilla velit ac, aliquam tellus. Vestibulum ante ipsum primis in
+  faucibus orci luctus et ultrices posuere cubilia Curae; </div>
+        <div>Nunc velit erat, tempus id rutrum sed, dapibus ut urna. Integer vehicula nibh a justo imperdiet
+  rutrum.</div>
+        <div> Nam faucibus pretium orci imperdiet sollicitudin. Nunc id facilisis
+  dui. Proin elementum et massa et feugiat. Integer rutrum ullamcorper eleifend.
+  Proin sit amet tincidunt risus. Sed nec augue congue eros accumsan tincidunt
+  sed eget ex.</div>
+  </div>
+  <p id="sameasclassname",class="sameasidname">Integer rutrum ullamcorper eleifend.
+  Proin sit amet tincidunt risus. Sed nec augue congue eros accumsan tincidunt
+  sed eget ex.</p>
+
+  <p>inline-block</p>
+  <a id="display">inline-block</a>
+  <p>Googlebrowser<a href="#">google</a></p>
+  <h2>Flexbox</h2>
+  <div class="wrapper">
+    <div class="box1">One</div>
+    <div class="box2">Two</div>
+    <div class="box3">Three</div>
+  </div>
+  
+    </body>
+</html>

@@ -1,0 +1,28 @@
+.age20 {
+    background-color: beige;
+    margin: 10px;
+}
+.age20{
+    background-color: brown;
+    margin: 10px;
+}
+.change1 {
+    background-color: blanchedalmond;
+    color: brown;
+}
+.change2 {
+    text-align: center;
+}
+.container1 {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color : yellowgreen;
+}
+.container2 {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color : green;
+}
+.active{
+    color:red;
+}

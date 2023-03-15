@@ -1,0 +1,114 @@
+<!-- <app-navbar>
+  <h4>Definition : </h4>
+  With this type of content projection, a component accepts content from a single source.
+</app-navbar>
+<hr>
+<app-sidebar>
+  <h4>Definition : </h4>
+  1. A component can have multiple slots. Each slot can specify a CSS selector that determines which content goes into
+  that slot <br>
+  2.This pattern is referred to as multi-slot content projection. With this pattern, you must specify where you want the
+  projected content to appear <br>
+  3.In the template for your component, add an ng-content element where you want the projected content to appear.
+</app-sidebar>
+<hr>
+<ng-container *ngComponentOutlet="domain"></ng-container>
+<hr>
+<button class="btn1" (click)="domainSidebar()">domainSidebar</button>
+<hr>
+<button class="btn2" (click)="domainNavbar()">domainNavbar</button>
+<hr>
+<button class="btn3" (click)="domainUpbar()">domainUpbar</button>
+
+<hr> -->
+<app-upbar></app-upbar>
+
+<ng-container *ngIf="array.length != ''; else nextblock">
+  <ng-container *ngFor="let ele of array">
+    <p></p>
+    <ng-container [ngSwitch] = "ele.age">
+      <ng-container class = "age21" *ngSwitchCase=21>
+        {{ele.names}}
+      </ng-container>
+      <ng-container class = "age20" *ngSwitchCase=20>
+        {{ele.names}}
+      </ng-container>
+    </ng-container>
+  </ng-container>
+</ng-container>
+
+<ng-template #nextblock>
+  <h3>No values,Input is Empty</h3>
+</ng-template>
+
+<hr>
+<h3>Ng class</h3>
+ <div [ngClass]="{'change1':true,'change2' : false}">
+  Attribute Directives Ng Class
+ </div>
+ <h3>Ng style</h3>
+ <div [ngStyle] = "{'color':colorvalue,'background-color' : 'yellow'}">
+  Attribute Directives Ng Style
+ </div>
+
+ <h3>Ng model</h3>
+ <input [(ngModel)] = "username" />
+ {{username}}
+
+ <div class = "container1" appHover>
+    <p> This section walks you through creating a highlight directive that sets the background color of the host element to yellow.</p>
+ </div>
+
+ <div class = "container2" appHover>
+   <p> The background color appears when the pointer hovers over the paragraph element and disappears as the pointer moves out.</p>
+ </div>
+<p> Property binding</p>
+<input type="text" [disabled] = "disabledBox" [value] = "company">  &nbsp; &nbsp;
+<input type="text" [disabled] = "disabledBox" [value] = "location"> &nbsp; &nbsp;
+<button (click) = "enableBox()">Disabled</button>
+<p>Attribute binding</p>
+<a href = "link" [attr.updateLink] = "uplink" [attr.data-link] = "uplink">Angular</a>
+
+<p>Class Binding</p>
+<p [class.active] = "passing ">Use class and style bindings to add and remove CSS class names from an element's </p>
+<p>Event Binding</p>
+<input type="text" (keyup) = "keyupcalling()">  &nbsp; &nbsp;
+<button (mouseleave) = "mouseleavecalling()" > click</button>
+
+<p>Pipe</p>
+<div> {{day | date : 'dd:MM:YYYY'}}</div>
+<div> {{num1 | number}}</div>
+<div>{{num2 | percent}}</div>
+<div>{{num1 | currency : 'INR' : 'symbol'}}</div>
+<div>{{case1 | uppercase}}</div>
+<div>{{case1 | lowercase}}</div>
+
+<p>Template reference varaibles</p>
+<input ngModel #holder />
+<button (click) = "holdercalling(holder)"> click</button>
+
+<div>
+  <p>{{math.topic}}</p>
+</div>
+<!-- <div *ngIf="array1.length != '' ">
+  <div *ngFor="let ele1 in array1">
+    <div [ngSwitch]="ele1.age">
+      <div class="age21" *ngSwitchCase=21>
+        {{ele1.names}}
+      </div>
+      <div class="age20" *ngSwitchCase=20>       <h3>{{ele.names}}</h3>
+        {{ele1.names}}
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <h2>My First Attribute Directive</h2>
+
+<h2>Pick a highlight color</h2>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [appHighlight]="color">Highlight me!</p> -->

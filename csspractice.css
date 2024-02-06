@@ -1,8 +1,18 @@
-.editor-note{
-   font-size:15px;
-   color: pink;
-}
 #nice{
    font-size:30px;
    color: aquamarine;
+}
+
+.editor-note{
+   font-size:100px;
+   color: pink;
+}
+
+#unique{
+   font-size: 50px;
+   color:blue;
+}
+.sameclassname{
+   font-size: 5px;
+   color:cornflowerblue;
 }

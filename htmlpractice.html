@@ -1,94 +1,131 @@
 <!doctype html>
 <html lang="en-US"><!--to set primary lang for web page-->
-    <head>
-    <title>firsthtml_webpage</title><!--To add the title of web page in the tab-->
-    <meta charset="utf-8" /><!--To use the character set included in the utf-8 -->
-    <link href="csspractice.css" rel="stylesheet"><!--To link html page with css doc-->
-    <meta name="description of webpage" content="Practising the basic html elements and attributes" />
-    <!--To use name and content attribute in meta tag to give the title and description will be displayed in the search engine result page-->
-    <meta property="og:image" content="googlepic.png" ><!--In search engine result page link display the logo-->
-    <link rel="icon" href="html_logo.png" type="image/x-icon" > <!--link element display the logo at the tab-->
-    </head>
-    <body>
-        <span style="font-size: 32px; border:10px,10px; margin:10px,0; display:block" ><center>HTML PRACTICE</center> </span>
-        <!--To place the top heading at the center of the web page-->
-        <u><h2>Paragraph tag with class attribute</h2></u>
-          <p>This is my first html page</p>
-          <p class="editor-note">This is my first html page</p>
-          <p id="nice">This is my first html page</p>
-          <p class="editor-note">This is my first html page</p><!--To use paragraph tag and it with class attribute-->
 
-      <u><h2>Nested elements</h2></u>
-          <p>This is my first<strong> html page </strong></p><!--To keep an element inside the another element-->
+<head>
+  <title>firsthtml_webpage</title><!--To add the title of web page in the tab-->
+  <meta charset="utf-8" /><!--To use the character set included in the utf-8 -->
+  <link href="csspractice.css" rel="stylesheet"><!--To link html page with css doc-->
+  <meta name="description of webpage" content="Practising the basic html elements and attributes" />
+  <!--To use name and content attribute in meta tag to give the title and description will be displayed in the search engine result page-->
+  <meta property="og:image" content="googlepic.png"><!--In search engine result page link display the logo-->
+  <link rel="icon" href="html_logo.png" type="image/x-icon"> <!--link element display the logo at the tab-->
+</head>
 
-      <u><h2>void elements</h2></u>
-       <h4>Insert image</h4>
-          <img src="googlepic.png" width="400" height="250" alt="google_pic" /> <!--Void elements does not contain close tag and content-->
-     <p id="docfrag">
-      <u> <h2>Lists</h2></u><!--To display the content in list-->
-       <ol>                 <!--ordered list-->
-         <li>Web-technology</li>
-          <ul>              <!--unordered list-->
-          <li>html</li>
-          <li>css</li>
-          <li>js</li>
-          </ul>
-          <li>Expansion</li>
-          <ul>
-            <li>Hyper-text markup language</li>
-            <li>Cascade style sheet</li>
-            <li>Java-script </li>
-          </ul>
-          <li>Uses</li>
-          <ul>
-            <li>Structure of webpage</li>
-            <li>Style to webpage</li>
-            <li>Behaviour of webpage</li>
-          </ul>
-          <li>Description list</li>
-          <dl>
-            <dt>Html</dt>
-            <dd>Structure of webpage</dd>
-            <dt>CSS</dt>
-            <dd>Style to webpage</dd>
-            <dt>JS</dt>
-            <dd>Behaviour of webpage</dd>
-          </dl>
-        </ol></p>
+<body>
+  <span style="font-size: 32px; border:10px,10px; margin:10px,0; display:block; color:blue; text-align: center";>
+   <h1> HTML PRACTICE</h1>
+  </span>
+  
+  <u>
+    <h2>Paragraph tag with class attribute</h2>
+  </u>
+  <p>This is my first html page</p>
+  <p id="unique" class="editor-note" >This is my first html page</p>
+  <p id="nice" id="unique">This is my first html page</p>
+  <p class="editor-note" class="sameclassname">This is my first html page</p><!--To use paragraph tag and it with class attribute-->
 
-       <u><h2>To link the web page</h2></u><!--To link web page from another html webpage-->
-       <a href="https://www.google.com" target="_blank" title="search anything on web">Click here to search</a>
-        <!--When mouse hover on link the value in title att will be displayed-->
-        
-       <u><h2>Character-encode using utf-8</h2></u><!--character encode in utf-8 -->
-       <p>Japanese word: 日本</p>
+  <u>
+    <h2>Nested elements</h2>
+  </u>
+  <p>This is my first<strong> html page </strong></p><!--To keep an element inside the another element-->
 
-       <u><h2>Character-encode using iso-8859-1</h2></u><!--character encode in iso-8859-1 -->
-       <p>This meta charset only accept latin and english characters. If we give japanese word cannot accept it</p>
-       <a href="html_linkpage.html" > check iso-8859-1</a>
-       
-       <u><h2>Emphasis element</h2></u> <!--To make the important content in italic-->
-          <p>I am <em>glad</em> to see u</p>
+  <u>
+    <h2>void elements</h2>
+  </u>
+  <h4>Insert image</h4>
+  <img src="googlepic.png" width="400" height="250" alt="google_pic" />
+  <!--Void elements does not contain close tag and content-->
+  <p id="docfrag">
+    <u>
+      <h2>Lists</h2>
+    </u><!--To display the content in list-->
+  <ol> <!--ordered list-->
+    <li>Web-technology</li>
+    <ul> <!--unordered list-->
+      <li>html</li>
+      <li>css</li>
+      <li>js</li>
+    </ul>
+    <li>Expansion</li>
+    <ul>
+      <li>Hyper-text markup language</li>
+      <li>Cascade style sheet</li>
+      <li>Java-script </li>
+    </ul>
+    <li>Uses</li>
+    <ul>
+      <li>Structure of webpage</li>
+      <li>Style to webpage</li>
+      <li>Behaviour of webpage</li>
+    </ul>
+    <li>Description list</li>
+    <dl>
+      <dt>Html</dt>
+      <dd>Structure of webpage</dd>
+      <dt>CSS</dt>
+      <dd>Style to webpage</dd>
+      <dt>JS</dt>
+      <dd>Behaviour of webpage</dd>
+    </dl>
+  </ol>
+  </p>
 
-        <u><h2>Strong element</h2></u><!--Strong element used to bold the important content-->
-        <p>HTML is gives <strong>structure</strong> to the webpage</p>
-        
-        <u><h2>Bold,Italic,Underline</h2></u><!--Bold and italic used for unimportant content,underline for mispelled word-->
-        <p><b>Bold </b><i>Italic </i><u>Underline </u></p>
+  <u>
+    <h2>To link the web page</h2>
+  </u><!--To link web page from another html webpage-->
+  <a href="https://www.google.com" target="_blank" title="search anything on web">Click here to search</a>
+  <!--When mouse hover on link the value in title att will be displayed-->
 
-        <u><h2>Block level link</h2></u>
-        <a href="https://www.google.com"><img src="googlepic.png" alt="googlepic" width="100" height="100"> </a>
-        
-        <u><h2>Linking from dir to sub dir</h2></u>
-        <a href="sub-dir/subdir_link.html">Link to another directory</a>
+  <u>
+    <h2>Character-encode using utf-8</h2>
+  </u><!--character encode in utf-8 -->
+  <p>Japanese word: 日本</p>
 
-         <u><h2>Documwnt fragment to same doc </h2></u>
-         <a href="#docfrag">Gotolist</a>
-         <u><h3>Documwnt fragment to same doc </h3></u>
-         <a href="html_linkpage.html#japanese">Gotojapanese at html_linkpage</a>
+  <u>
+    <h2>Character-encode using iso-8859-1</h2>
+  </u><!--character encode in iso-8859-1 -->
+  <p>This meta charset only accept latin and english characters. If we give japanese word cannot accept it</p>
+  <a href="html_linkpage.html"> check iso-8859-1</a>
 
-         <u><h2>To link email</h2></u>
-         <a href="mailto:janushreedurai@gmail.com">Sendmail</a>
-         
-      </body>
+  <u>
+    <h2>Emphasis element</h2>
+  </u> <!--To make the important content in italic-->
+  <p>I am <em>glad</em> to see u</p>
+
+  <u>
+    <h2>Strong element</h2>
+  </u><!--Strong element used to bold the important content-->
+  <p>HTML is gives <strong>structure</strong> to the webpage</p>
+
+  <u>
+    <h2>Bold,Italic,Underline</h2>
+  </u><!--Bold and italic used for unimportant content,underline for mispelled word-->
+  <p><b>Bold </b><i>Italic </i><u>Underline </u></p>
+
+  <u>
+    <h2>Block level link</h2>
+  </u>
+  <a href="https://www.google.com"><img src="googlepic.png" alt="googlepic" width="100" height="100"> </a>
+
+  <u>
+    <h2>Linking from dir to sub dir</h2>
+  </u>
+  <a href="sub-dir/subdir_link.html">Link to another directory</a>
+
+  <u>
+    <h2>Documwnt fragment to same doc </h2>
+  </u>
+  <a href="#docfrag">Gotolist</a>
+  <u>
+    <h3>Documwnt fragment to same doc </h3>
+  </u>
+  <a href="html_linkpage.html#japanese">Gotojapanese at html_linkpage</a>
+
+  <u>
+    <h2>To link email</h2>
+  </u>
+  <a href="mailto:janushreedurai@gmail.com">Sendmail</a>
+
+</body>
+
 </html>
